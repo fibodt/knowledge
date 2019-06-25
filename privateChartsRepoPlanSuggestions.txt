@@ -1,0 +1,8 @@
+1.若不使用rancher管理k8s集群
+使用Harbor作为私有charts仓库。
+helm package my-project 后push到Harbor。
+用户需安装helm命令行和helm的服务端Tiller（Tiller将charts部署在k8s上等功能），进行push， pull， install charts。
+2.若使用rancher管理集群
+使用github作为私有charts仓库。
+将charts项目上传至github，Rancher添加github url作为catalogs(应用商店)。
+无需Harbor, helm, tiller等。
