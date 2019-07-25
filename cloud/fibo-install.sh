@@ -1,1 +1,2 @@
-install
+if xxx
+else xxx
